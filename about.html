@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <style>
+      @import url(style.css);
+  </style>
+
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+       
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    p{
+        font-size: 1.7rem;
+        text-transform: none;
+        padding-bottom: 3rem;
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid black;
+        padding-bottom: 5rem;
+    }
+
+    .table td,
+    .table th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .table thead td{
+        font-weight: bold;
+        background:var(--light-yellow);
+        font-size: 2rem;
+        color:var(--light-color);
+        cursor: pointer;
+        text-transform: none;
+        border:var(--border);
+        border: 3px solid black;
+    }
+    .table thead th {
+        
+    background:var(--light-yellow);
+    font-size: 1.8rem;
+    color:var(--light-color);
+    cursor: pointer;
+    text-transform: none;
+    border:var(--border);
+   
+    
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+
+    /*responsive*/
+
+    @media(max-width: 500px) {
+        .table thead {
+            display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td {
+            display: block;
+            width: 100%;
+        }
+
+        .table tr {
+            margin-bottom: 15px;
+        }
+
+        .table td {
+            text-align: right;
+            padding-left: 50%;
+            text-align: right;
+            position: relative;
+        }
+
+        .table td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+</style>
+</head>
+<body>
+ <!-----------Header Section Start Here--------------------->   
+ <header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+  
+   <!--<img src="img/logo.png" alt="Logo" style="width: 9%; height: auto; ">-->
+    <a href="index.html" class="logo" > <span>Detroit</span>Motors </a>
+   
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="newcar.html">New Car</a>
+        <a href="usedVehicles.html">Pre-Owned Car</a>
+        <a href="services.html">services</a>
+        <a href="contact.html">contact</a>
+        <a href="about.html">About Us</a>
+        <a href="SignUp.html">Sign Up</a>
+    </nav>
+
+    <div id="login-btn">
+        <button class="btn">login</button>
+        <i class="far fa-user"></i>
+    </div>
+
+</header> 
+ 
+<!-------------------Log in Section Start Here--------------------->
+<div class="login-form-container">
+
+    <span id="close-login-form" class="fas fa-times"></span>
+
+    <form action="">
+        <h3>user login</h3>
+        <input type="email" placeholder="email" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p> forget your password <a href="#">click here</a> </p>
+        <input type="submit" value="login" class="btn">
+        <p>or login with</p>
+        <div class="buttons">
+            <a href="#" class="btn"> google </a>
+            <a href="#" class="btn"> facebook </a>
+        </div>
+        <p> don't have an account <a href="SignUp.html">create one</a> </p>
+    </form>
+
+</div>
+<section class="home" id="home">
+
+  <h4 data-speed="-2" class="home-parallax">About Us</h4>
+
+
+</section>
+
+
+<p>
+    Welcome to Detroit Motors, where we provide the best car buying experience. We are proud to 
+    offer a wide range of vehicles, from luxury to economy, and we are committed to helping our 
+    customers find the perfect car that fits their needs. <br><br>
+    Detroit Motors was established in 2020, and we have grown to become one of the most trusted car
+    dealerships in the United States. We pride ourselves on providing exceptional customer service,
+    a vast selection of quality vehicles, and competitive pricing that sets us apart from the competition<br><br>
+    At Detroit Motors, we offer a diverse selection of vehicles to suit all lifestyles and budgets. Our 
+    inventory includes popular brands such as Ford, Chevrolet, and Honda, with a range of features that 
+    will meet your driving needs. Whether you are looking for a reliable family car, a fuel-efficient 
+    commuter vehicle, or a luxury sedan, we have the perfect car for you. Additionally, we offer special
+    deals and financing options to help you get the best value for your money<br><br>
+    Our team at Detroit Motors is made up of highly qualified professionals who are passionate about 
+    providing exceptional customer service. Our sales associates are knowledgeable about all the vehicles 
+    we offer and are committed to helping you find the perfect car. Our financing experts will work with
+    you to find the best financing option for your budget, and our service technicians are trained to keep 
+    your car running smoothly for years to come.<br><br>
+    Thank you for visiting Detroit Motors. We are located in six cities across Michigan, USA. We invite you
+    to visit us at one of our six locations or give us a call to learn more about our inventory, financing
+     options, and exceptional customer service
+
+
+</p>
+<table class="table">
+
+    <thead>
+        <tr>
+            <td colspan="3">Our Branches</td>
+        </tr>
+    </thead>
+    <thead>
+        <tr>
+            <th>Branch No</th>
+            <th>City</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Branch No">1</td>
+            <td data-label="City">Barmingham</td>
+            <td data-label="Location"><a href="https://www.google.com/maps/place/Nike+Community+Store/@42.3336741,-83.0510123,17z/data=!4m5!3m4!1s0x883b2d31b013d1a5:0x44506de6ac67ed8d!8m2!3d42.3336741!4d-83.0488236"> 44261 Woodward Ave, Barmingham, MI 48226</a></td>
+
+        </tr>
+
+        <tr>
+            <td data-label="Branch No">2</td>
+            <td data-label="City">Warren</td>
+            <td data-label="Location"><a href="https://www.google.com/maps/place/Macy's/@42.5375266,-83.1156767,17z/data=!3m1!4b1!4m5!3m4!1s0x8824c51d2c8f6c61:0xb1ad0ccb634573f5!8m2!3d42.5375266!4d-83.113488">500 W 11 Mile Rd, Troy, MI 48083</a></td>
+
+        </tr>
+        <tr>
+            <td data-label="Branch No">3</td>
+            <td data-label="City">Troy</td>
+            <td data-label="Location"><a href="https://www.google.com/maps/place/17420+Hall+Rd,+Clinton+Twp,+MI+48038/@42.625616,-82.9487003,17z/data=!3m1!4b1!4m5!3m4!1s0x8824dfb5ba6ab09f:0xd8c7b118fd5db18!8m2!3d42.625616!4d-82.9465116">17420 W 15, Troy, MI 48038</a></td>
+        </tr>
+        <tr>
+            <td data-label="Branch No">4</td>
+            <td data-label="City">Detroit</td>
+            <td data-label="Location"><a href="https://www.google.com/maps/place/Nike+Community+Store/@42.3336741,-83.0510123,17z/data=!4m5!3m4!1s0x883b2d31b013d1a5:0x44506de6ac67ed8d!8m2!3d42.3336741!4d-83.0488236"> 1261 Woodward Ave, Detroit, MI 48226</a></td>
+
+        </tr>
+        <tr>
+            <td data-label="Branch No">5</td>
+            <td data-label="City">Royal Oak</td>
+            <td data-label="Location"><a href="https://www.google.com/maps/place/Nike+Community+Store/@42.3336741,-83.0510123,17z/data=!4m5!3m4!1s0x883b2d31b013d1a5:0x44506de6ac67ed8d!8m2!3d42.3336741!4d-83.0488236"> 12616 Woodward Ave, Royal Oak, MI 48226</a></td>
+
+        </tr>
+        <tr>
+            <td data-label="Branch No">6</td>
+            <td data-label="City">Sterling-Height</td>
+            <td data-label="Location"><a href="https://www.google.com/maps/place/Nike+Community+Store/@42.3336741,-83.0510123,17z/data=!4m5!3m4!1s0x883b2d31b013d1a5:0x44506de6ac67ed8d!8m2!3d42.3336741!4d-83.0488236"> 1261 Mound Rd, Sterling-Height, MI 48286</a></td>
+
+        </tr>
+    </tbody>
+</table><br><br><br>
+
+
+
+
+
+
+
+
+<!--Footer Stat Here-->
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our branches</h3>
+            <a href="https://goo.gl/maps/NHem115Ch8UHh9om9"> <i class="fas fa-map-marker-alt"></i> Barmingham </a>
+            <a href="https://goo.gl/maps/jzjw873LjM9pzA6c6"> <i class="fas fa-map-marker-alt"></i> Warren </a>
+            <a href="https://goo.gl/maps/WjtawoR39kTwMcW67"> <i class="fas fa-map-marker-alt"></i> Troy </a>
+            <a href="https://goo.gl/maps/cSP7rSq8vBihxzwt5"> <i class="fas fa-map-marker-alt"></i> Detroit </a>
+            <a href="https://goo.gl/maps/cSP7rSq8vBihxzwt5"> <i class="fas fa-map-marker-alt"></i> Royal Oak </a>
+            <a href="https://goo.gl/maps/Ajwoms9fCuiVA9Pe9"> <i class="fas fa-map-marker-alt"></i> Sterling Height </a>
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="newcar.html"> <i class="fas fa-arrow-right"></i> New Car </a>
+            <a href="usedVehicles.html"> <i class="fas fa-arrow-right"></i> Pre-Owned Car </a>
+            <a href="services.html"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact </a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about us </a>
+            <a href="SignUp.html"> <i class="fas fa-arrow-right"></i> Sign Up </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +313-444-555</a>
+            <a href="#"> <i class="fas fa-phone"></i> +313-555-6666 </a>
+            <a href="mailto:srsabbir423@gmail.com"> <i class="fas fa-envelope"></i> detroitmotors@gmail.com </a>
+            <a href="mailto:srsabbir423@gmail.com"> <i class="fas fa-envelope"></i> detroitmotors@yahoo.com </a>
+            <a href="https://goo.gl/maps/cSP7rSq8vBihxzwt5"> <i class="fas fa-map-marker-alt"></i> 27550 Woodward Ave, Royal Oak, MI </a>
+            <a href="https://goo.gl/maps/cSP7rSq8vBihxzwt5"> <i class="fas fa-map-marker-alt"></i> 777 John R Rd , Troy, MI </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://www.tiktok.com/en/"> <i class="fab fa-tiktok"></i> Tik Tok </a>
+        </div>
+        <div class="box">
+            <h3>Bussiness Hours</h3>
+            <table>
+                <tr>
+                  <th>Day</th>
+                  <th>Open</th>
+                  <th>Close</th>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td>9:00am</td>
+                  <td>5:00pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>9:00am</td>
+                  <td>5:00pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>9:00am</td>
+                  <td>5:00pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>9:00am</td>
+                  <td>5:00pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>9:00am</td>
+                  <td>5:00pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10:00am</td>
+                  <td>3:00pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>Closed</td>
+                  <td>Closed</td>
+                </tr>
+              </table>
+        </div>
+
+    </div>
+   
+
+    <div class="credit"> detroitmotors &copy; 2023 | all rights reserved </div>
+
+</section>
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
